@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="guessGame.css">
+    <!-- <link rel="stylesheet" href="mobileViewGuessGame.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- HEADING/TITLE -->
+    <h1 id="title">-GuEsS "THE LUCKY NUMBER" gAmE-</h1></div>
+
+    <!-- mini heading -->
+    <h2 id="instruc">Guess the lucky number to win! (between 1 - 100 (inclusively))</h2>
+
+    <!-- Statistics and Restart Button section -->
+    <div id="head">
+            <table border="1" cellspacing="0">
+                <tr id="statistics">
+                    <td class="gameOver">-----</td>
+                    <td class="livesRemaining" id="lives">----</td>
+                </tr>
+            </table>
+        
+            <input type="button" id="restart" value=""/>
+    </div>
+    
+    <div id="subHead">
+        <!-- Lost or Win paragraph at the end of the game-->
+        <h3 id="lostOrWon"></h3>
+
+        <!-- Lucky Number paragraph at the end of the game [if the user did lose] -->
+        <h2 id="showLuckyNumber"></h2>
+        
+        <!-- Hint -->
+        <h2 id="range"></h2>
+        <!-- <hr> -->
+    </div>
+    <!-- STARTGAME Button at the begin of the page -->
+    <h1 id="toStart">START GAME</h1>
+
+    <!-- Game Instruction paragraphs -->
+    <div class="p-instructions">
+        <div id="howtoplay">How to play:</div>
+        <p id="pInstruc0"><b>* WITH "7" CHANCES (THAT WILL BE SHOWN ON THE TOP LEFT OF THE SCREEN), REVEALS THE NUMBER OF TIME TO GUESS THE "LUCKY NUMBER".</b></p>
+        <p id="pInstruc1"><b>* IF YOU PICK THE "LUCKY NUMBER", ITS BUTTON COLOR WILL TURN TO A "<div id="SG">SHINNING GREEN</div></b> <b><div id="subP0">", AND THAT MEANS YOU HAVE WON.</b></div> </p>
+        <p id="pInstruc2"><b>* IF NOT THE LUCKY NUMBER PICKED, SELECTED NUMBER'S BUTTON WILL TURN TO "<div id="RED">RED</div></b> <b><div id="subP1">".</div></b></p>
+        <p id="pInstruc3"><b>* IF YOU PICK A WRONG NUMBER, YOU CAN LOOK AT THE "HINT" THAT HELPS YOU IN WINNING THE GAME.</b></p>
+    </div>
+
+    <!-- the number buttons -->
+    <div class="numbers" id="numberBox">
+        <input type="button" id="btn1" class="btn" value="1">
+        <input type="button" id="btn2" class="btn" value="2">
+        <input type="button" id="btn3" class="btn" value="3">
+        <input type="button" id="btn4" class="btn" value="4">
+        <input type="button" id="btn5" class="btn" value="5">
+        <input type="button" id="btn6" class="btn" value="6">
+        <input type="button" id="btn7" class="btn" value="7">
+        <input type="button" id="btn8" class="btn" value="8">
+        <input type="button" id="btn9" class="btn" value="9">
+        <input type="button" id="btn10" class="btn" value="10">
+        <input type="button" id="btn11" class="btn" value="11">
+        <input type="button" id="btn12" class="btn" value="12">
+        <input type="button" id="btn13" class="btn" value="13">
+        <input type="button" id="btn14" class="btn" value="14">
+        <input type="button" id="btn15" class="btn" value="15">
+        <input type="button" id="btn16" class="btn" value="16">
+        <input type="button" id="btn17" class="btn" value="17">
+        <input type="button" id="btn18" class="btn" value="18">
+        <input type="button" id="btn19" class="btn" value="19">
+        <input type="button" id="btn20" class="btn" value="20">
+        <input type="button" id="btn21" class="btn" value="21">
+        <input type="button" id="btn22" class="btn" value="22">
+        <input type="button" id="btn23" class="btn" value="23">
+        <input type="button" id="btn24" class="btn" value="24">
+        <input type="button" id="btn25" class="btn" value="25">
+        <input type="button" id="btn26" class="btn" value="26">
+        <input type="button" id="btn27" class="btn" value="27">
+        <input type="button" id="btn28" class="btn" value="28">
+        <input type="button" id="btn29" class="btn" value="29">
+        <input type="button" id="btn30" class="btn" value="30">
+         <input type="button" id="btn31" class="btn" value="31">
+        <input type="button" id="btn32" class="btn" value="32">
+        <input type="button" id="btn33" class="btn" value="33">
+        <input type="button" id="btn34" class="btn" value="34">
+        <input type="button" id="btn35" class="btn" value="35">
+        <input type="button" id="btn36" class="btn" value="36">
+        <input type="button" id="btn37" class="btn" value="37">
+        <input type="button" id="btn38" class="btn" value="38">
+        <input type="button" id="btn39" class="btn" value="39">
+        <input type="button" id="btn40" class="btn" value="40">
+        <input type="button" id="btn41" class="btn" value="41">
+        <input type="button" id="btn42" class="btn" value="42">
+        <input type="button" id="btn43" class="btn" value="43">
+        <input type="button" id="btn44" class="btn" value="44">
+        <input type="button" id="btn45" class="btn" value="45">
+        <input type="button" id="btn46" class="btn" value="46">
+        <input type="button" id="btn47" class="btn" value="47">
+        <input type="button" id="btn48" class="btn" value="48">
+        <input type="button" id="btn49" class="btn" value="49">
+        <input type="button" id="btn50" class="btn" value="50">
+        <input type="button" id="btn51" class="btn" value="51">
+        <input type="button" id="btn52" class="btn" value="52">
+        <input type="button" id="btn53" class="btn" value="53">
+        <input type="button" id="btn54" class="btn" value="54">
+        <input type="button" id="btn55" class="btn" value="55">
+        <input type="button" id="btn56" class="btn" value="56">
+        <input type="button" id="btn57" class="btn" value="57">
+        <input type="button" id="btn58" class="btn" value="58">
+        <input type="button" id="btn59" class="btn" value="59">
+        <input type="button" id="btn60" class="btn" value="60">
+        <input type="button" id="btn61" class="btn" value="61">
+        <input type="button" id="btn62" class="btn" value="62">
+        <input type="button" id="btn63" class="btn" value="63">
+        <input type="button" id="btn64" class="btn" value="64">
+        <input type="button" id="btn65" class="btn" value="65">
+        <input type="button" id="btn66" class="btn" value="66">
+        <input type="button" id="btn67" class="btn" value="67">
+        <input type="button" id="btn68" class="btn" value="68">
+        <input type="button" id="btn69" class="btn" value="69">
+        <input type="button" id="btn70" class="btn" value="70">
+        <input type="button" id="btn71" class="btn" value="71">
+        <input type="button" id="btn72" class="btn" value="72">
+        <input type="button" id="btn73" class="btn" value="73">
+        <input type="button" id="btn74" class="btn" value="74">
+        <input type="button" id="btn75" class="btn" value="75">
+        <input type="button" id="btn76" class="btn" value="76">
+        <input type="button" id="btn77" class="btn" value="77">
+        <input type="button" id="btn78" class="btn" value="78">
+        <input type="button" id="btn79" class="btn" value="79">
+        <input type="button" id="btn80" class="btn" value="80">
+        <input type="button" id="btn81" class="btn" value="81">
+        <input type="button" id="btn82" class="btn" value="82">
+        <input type="button" id="btn83" class="btn" value="83">
+        <input type="button" id="btn84" class="btn" value="84">
+        <input type="button" id="btn85" class="btn" value="85">
+        <input type="button" id="btn86" class="btn" value="86">
+        <input type="button" id="btn87" class="btn" value="87">
+        <input type="button" id="btn88" class="btn" value="88">
+        <input type="button" id="btn89" class="btn" value="89">
+        <input type="button" id="btn90" class="btn" value="90">
+        <input type="button" id="btn91" class="btn" value="91">
+        <input type="button" id="btn92" class="btn" value="92">
+        <input type="button" id="btn93" class="btn" value="93">
+        <input type="button" id="btn94" class="btn" value="94">
+        <input type="button" id="btn95" class="btn" value="95">
+        <input type="button" id="btn96" class="btn" value="96">
+        <input type="button" id="btn97" class="btn" value="97">
+        <input type="button" id="btn98" class="btn" value="98">
+        <input type="button" id="btn99" class="btn" value="99">
+        <input type="button" id="btn100" class="btn" value="100">
+    </div>
+
+    <!-- Done by's section -->
+    <div id="p"><p id="p1"><strong>Practice game work done by: </strong></p>
+        <p id="p2"><strong>Emmanuel Caesar Tuazama</strong></p></div>
+ 
+    <!-- Javascript's link-->
+    <script src="guessGame.js"></script>
+</body>
+</html>
